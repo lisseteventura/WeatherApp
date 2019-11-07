@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather app!!!!!</title>
+    <link rel="stylesheet" type="text/css" href="./style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--
+    HTML NEEDS
+    - input box
+    - submit button
+    - an element with a unique class, id, or data-attribute
+      for each of the weather metrics you want to put on the page.
+   -->
+    <div class="app-title"><p>Local Weather</p></div>
+
+    <div class="container">
+      <form id="form">
+        Enter your zip code:
+        <input type="text" id="zip-code" />
+        <button id="submit">Submit</button>
+      </form>
+
+      <div class="weather-container">
+        <div class="name text"></div>
+        <div class="temp text"></div>
+        <div class="description text"></div>
+      </div>
+      <div class="min-temp"></div>
+      <div class="max-temp"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
